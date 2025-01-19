@@ -1,0 +1,102 @@
+/* Styling for the container holding the client list */
+.client-list-card {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the client list */
+.client-list-card h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Add client link */
+.client-list-card a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.client-list-card a:hover {
+  color: #0056b3;
+}
+
+/* Table styling */
+.client-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.client-table th, .client-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.client-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  color: #333;
+}
+
+.client-table td {
+  background-color: #fff;
+  color: #555;
+}
+
+/* Action buttons (Edit & Delete) */
+.client-table a, .client-table button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit link style */
+.client-table a {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.client-table a:hover {
+  background-color: #0056b3;
+}
+
+/* Delete button style */
+.client-table button {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 4px;
+}
+
+.client-table button:hover {
+  background-color: #c82333;
+}
+
+/* Additional styling for small screen devices */
+@media (max-width: 768px) {
+  .client-list-card {
+    padding: 15px;
+  }
+
+  .client-table th, .client-table td {
+    padding: 10px;
+  }
+
+  .client-table a, .client-table button {
+    font-size: 0.85rem;
+  }
+}
