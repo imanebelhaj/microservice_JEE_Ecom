@@ -1,9 +1,0 @@
-angularPiroject : front dyal client serivce
-tp1JEE : productService
-dakch kaml khdam b consul darori ykon installed fpc 
-after installing
-go to terminal 
-ser folder dyl consul dylk
-ana dyra f main path user dyli so kndir direct : cd consul
-then had commande bach tkhdmo : .\consul agent -dev
-vente baqi mkhdamch gae 
