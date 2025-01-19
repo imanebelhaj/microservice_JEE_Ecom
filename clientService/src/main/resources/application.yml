@@ -1,0 +1,10 @@
+#spring:
+#  application:
+#    name: clientService
+#  cloud:
+#    consul:
+#      discovery:
+#        enabled: true  # Enable Consul discovery
+#        register: true  # Register clientService with Consul
+#server:
+#  port: 8082  # Port for clientService

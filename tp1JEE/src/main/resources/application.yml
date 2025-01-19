@@ -1,0 +1,10 @@
+#spring:
+#  application:
+#    name: tp1JEE
+#  cloud:
+#    consul:
+#      discovery:
+#        enabled: true  # Enable Consul discovery
+#        register: true  # Register tp1JEE with Consul
+#server:
+#  port: 8081  # Port for tp1JEE service

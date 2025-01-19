@@ -1,0 +1,78 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Add Client</title>-->
+<!--    <script>-->
+<!--        document.addEventListener("DOMContentLoaded", function () {-->
+<!--            const addButton = document.getElementById("add-client-btn");-->
+
+<!--            addButton.addEventListener("click", function () {-->
+<!--                // Get input values-->
+<!--                const nom = document.getElementById("client-nom").value;-->
+<!--                const prenom = document.getElementById("client-prenom").value;-->
+<!--                const tel = document.getElementById("client-tel").value;-->
+<!--                const email = document.getElementById("client-email").value;-->
+<!--                const password = document.getElementById("client-password").value;-->
+
+<!--                // Validate required fields-->
+<!--                if (!nom || !prenom || !email || !password) {-->
+<!--                    alert("Please fill in all required fields.");-->
+<!--                    return;-->
+<!--                }-->
+
+<!--                // Prepare request-->
+<!--                const xhr = new XMLHttpRequest();-->
+<!--                xhr.open("POST", "http://localhost:8080/clientService/api/clients", true);-->
+<!--                xhr.setRequestHeader("Content-Type", "application/json");-->
+
+<!--                xhr.onreadystatechange = function () {-->
+<!--                    if (xhr.readyState === XMLHttpRequest.DONE) {-->
+<!--                        const responseElement = document.getElementById("response");-->
+<!--                        if (xhr.status === 200 || xhr.status === 201) {-->
+<!--                            responseElement.innerText = "Client added successfully!";-->
+<!--                            responseElement.style.color = "green";-->
+<!--                        } else {-->
+<!--                            responseElement.innerText = "Error adding client: " + xhr.responseText;-->
+<!--                            responseElement.style.color = "red";-->
+<!--                        }-->
+<!--                    }-->
+<!--                };-->
+
+<!--                // Send request-->
+<!--                const clientData = JSON.stringify({-->
+<!--                    nom: nom,-->
+<!--                    prenom: prenom,-->
+<!--                    tel: tel,-->
+<!--                    email: email,-->
+<!--                    password: password-->
+<!--                });-->
+<!--                xhr.send(clientData);-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Add Client</h1>-->
+<!--<form id="client-form">-->
+<!--    <label for="client-nom">Nom:</label>-->
+<!--    <input type="text" id="client-nom" name="client-nom" required><br><br>-->
+
+<!--    <label for="client-prenom">Prenom:</label>-->
+<!--    <input type="text" id="client-prenom" name="client-prenom" required><br><br>-->
+
+<!--    <label for="client-tel">Telephone:</label>-->
+<!--    <input type="text" id="client-tel" name="client-tel"><br><br>-->
+
+<!--    <label for="client-email">Email:</label>-->
+<!--    <input type="email" id="client-email" name="client-email" required><br><br>-->
+
+<!--    <label for="client-password">Password:</label>-->
+<!--    <input type="password" id="client-password" name="client-password" required><br><br>-->
+
+<!--    <button type="button" id="add-client-btn">Add Client</button>-->
+<!--</form>-->
+<!--<p id="response">Waiting for action...</p>-->
+<!--</body>-->
+<!--</html>-->
